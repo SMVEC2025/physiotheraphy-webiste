@@ -1,0 +1,157 @@
+.admission-iconbox {
+    padding-left: 150px;
+    border-left: 1px solid #D7D7D6;
+    @include respond(laptop) {
+        padding-left: 50px;
+    }
+    @include respond(lg) {
+        padding-left: 30px;
+    }
+    @include respond(md) {
+        padding-left: 30px;
+    }
+}
+.admission-iconbox-item {
+    &:not(:last-child) {
+        margin-bottom: 72px;
+        @include respond(lg) {
+            margin-bottom: 40px;
+        }
+    }
+    .xb-item {
+        &--icon {
+            width: 85px;
+            height: 85px;
+            background-color: #F1F1E9;
+            @include border-radius(50%);
+            margin-right: 30px;
+            @include center;
+        }
+        &--holder {
+            width: calc(100% - 115px);
+            @include respond(xs) {
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
+        &--title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 14px;
+            font-family: var(--font-body);
+            text-transform: capitalize ;
+        }
+        &--content {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+
+
+.admission_main{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    background-image: url('https://arts.smvec.ac.in/assets/img/history/history-thumb-6.jpg');
+    background-size: cover;
+}
+.af_main{
+    width: 700px;
+    transform: translate(0,0);
+    background-size: cover;
+
+}
+.highlights_main{
+
+}
+.highlights_main{
+    padding: 5rem 50px;
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: rgb(4, 4, 48);
+    justify-content: center;
+
+
+    div{
+        background-color: #11366d;
+        width: 220px;
+        height: 120px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 7px;
+        h4{
+            font-size: 30px;
+            color: #f1b807;
+        }
+        h2{
+            font-size: 16px;
+            font-weight: 400;
+            color: white;
+            
+        }
+    }
+}
+
+/////programs///////
+.admission_profram-main{
+  padding: 4rem 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+background-color: #030430;
+h2{
+    color: white;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+  .program-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+    .con{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        color: white;
+        height: 150px;
+        padding: 15px 0;
+        background-color: #11366d;
+        width: 300px;
+        gap: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            &:hover{
+            scale: 1.02; 
+            transition: scale 0.3s ease-out;
+        background-color: #193f79;
+
+            }
+            img{
+                width: 50px;
+                opacity: 1;
+            }
+        h2{
+            color: white;
+            font-size: 20px;
+            letter-spacing: 0.2px;
+            font-weight: 300;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+      
+        }
+    }
+  }
+}

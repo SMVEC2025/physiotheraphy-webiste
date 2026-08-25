@@ -1,0 +1,371 @@
+.hero__content-wrap {
+
+  .section-title {
+    .title {
+      font-size: 60px;
+      line-height: 70px;
+
+      @include respond(lg) {
+        font-size: 50px;
+        line-height: 58px;
+      }
+
+      @include respond(md) {
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+
+    .content {
+      color: #D4CDD1;
+    }
+  }
+
+  .xb-hero-img {
+    margin-top: -10px;
+    @include transform(translateX(30px));
+
+    @include respond(xs) {
+      margin-top: 0;
+      @include transform(translateX(10px));
+    }
+  }
+}
+
+.hero-btns {
+  background: var(--color-secondary);
+  padding: 36px 0;
+
+  .thm-btn {
+    padding: 17px 38px;
+  }
+}
+
+.hero-style-two {
+  .hero-bg {
+    min-height: 790px;
+    display: flex;
+    align-items: center;
+
+    @include respond(lg) {
+      min-height: 600px;
+    }
+
+    @include respond(xs) {
+      min-height: 450px;
+    }
+  }
+
+  .hero__content-wrap .section-title .title {
+    @include respond(md) {
+      font-size: 40px;
+      line-height: 53px;
+    }
+
+    @include respond(xs) {
+      font-size: 30px;
+      line-height: 43px;
+    }
+  }
+}
+
+.hero-style-three {
+  min-height: 800px;
+
+  @include respond(laptop) {
+    min-height: 700px;
+  }
+
+  @include respond(lg) {
+    min-height: 600px;
+  }
+
+  @include respond(md) {
+    padding-top: 100px;
+  }
+
+  .hero-right {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+
+    @include respond(laptop) {
+      right: -50px;
+      max-width: 800px;
+    }
+
+    @include respond(lg) {
+      right: -50px;
+      max-width: 650px;
+    }
+
+    @include respond(md) {
+      position: unset;
+    }
+  }
+}
+
+
+.hero {
+  position: relative;
+  min-height: calc(100vh - 130px);
+
+  .hero_main_video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+  }
+
+  .bg_img {
+    background-color: rgba(0, 0, 0, 0.425);
+    position: absolute;
+    z-index: 12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+// ========================================
+// Campus Facilities SCSS
+// ========================================
+
+// Import Google Font
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+// ========================================
+// Variables
+// ========================================
+$cf-primary-blue: #2563eb;
+$cf-light-blue: var(--color-secondary);
+$cf-blue-border: #dbeafe;
+$cf-dark-blue: #1e40af;
+$cf-text-dark: #111827;
+$cf-text-gray: #6b7280;
+$cf-border-gray: #e5e7eb;
+$cf-background-light: #f9fafb;
+$cf-white: #ffffff;
+$cf-shadow-hover: rgba(37, 99, 235, 0.12);
+
+// ========================================
+// Mixins
+// ========================================
+@mixin cf-transition($property: all, $duration: 0.3s, $timing: ease) {
+  transition: $property $duration $timing;
+}
+
+@mixin cf-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// ========================================
+// Base Styles
+// ========================================
+.cf-campus-facilities-container {
+  background: #fffdf6;
+  min-height: 100vh;
+}
+
+// ========================================
+// Header Section
+// ========================================
+.cf-header-section {
+  background: $cf-white;
+  border-bottom: 1px solid $cf-border-gray;
+  padding: 60px 0;
+
+  @media (max-width: 768px) {
+    padding: 40px 0;
+  }
+}
+
+.cf-header-content {
+  text-align: center;
+}
+
+.cf-badge {
+  display: inline-block;
+  padding: 6px 20px;
+  background: $cf-light-blue;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  border: 1px solid $cf-blue-border;
+}
+
+.cf-badge-text {
+  color: $cf-dark-blue;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.cf-main-title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: $cf-text-dark;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.cf-subtitle {
+  font-size: 1.125rem;
+  color: $cf-text-gray;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+// ========================================
+// Facilities Section
+// ========================================
+.cf-facilities-section {
+  padding: 80px 0;
+
+  @media (max-width: 768px) {
+    padding: 60px 0;
+  }
+}
+
+// ========================================
+// Facility Card
+// ========================================
+.cf-facility-card {
+  background: #fffdf6;
+  border-radius: 12px;
+  padding: 32px 28px;
+  height: 100%;
+  border: 1px solid rgba(214, 185, 123, 0.425);
+  @include cf-transition(all, 0.3s, ease);
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--color-secondary);
+    transform: translateY(-4px);
+
+
+
+
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+}
+
+// Blue accent line
+.cf-accent-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 0;
+  background: $cf-primary-blue;
+  @include cf-transition(height, 0.3s, ease);
+  border-radius: 12px 0 0 12px;
+}
+
+// Icon container
+.cf-icon-container {
+  width: 64px;
+  height: 64px;
+  background: $cf-light-blue;
+  color: white;
+  border-radius: 10px;
+  @include cf-flex-center;
+  margin-bottom: 24px;
+  border: 1px solid $cf-blue-border;
+  @include cf-transition(all, 0.3s, ease);
+}
+
+.cf-icon {
+  font-size: 2rem;
+  @include cf-transition(transform, 0.3s, ease);
+}
+
+// Card content
+.cf-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: $cf-text-dark;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.cf-card-description {
+  color: $cf-text-gray;
+  font-size: 0.938rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+// Arrow indicator
+.cf-arrow-indicator {
+  margin-top: 20px;
+  color: $cf-primary-blue;
+  font-size: 1.25rem;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateX(-10px);
+  @include cf-transition(opacity, 0.3s, ease);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+// ========================================
+// Footer Section
+// ========================================
+.cf-footer-section {
+  background: $cf-background-light;
+  border-top: 1px solid $cf-border-gray;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.cf-footer-text {
+  color: $cf-text-gray;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+// ========================================
+// Responsive Utilities
+// ========================================
+@media (max-width: 576px) {
+  .cf-main-title {
+    font-size: 1.75rem;
+  }
+
+  .cf-subtitle {
+    font-size: 1rem;
+  }
+
+  .cf-facility-card {
+    padding: 24px 20px;
+  }
+
+  .cf-icon-container {
+    width: 56px;
+    height: 56px;
+  }
+
+  .cf-icon {
+    font-size: 1.75rem;
+  }
+}
+
+
+.fc_home_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/img/bg/back.webp');
+    background-size: cover;
+}
