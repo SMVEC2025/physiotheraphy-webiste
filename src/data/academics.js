@@ -19,6 +19,25 @@ export const statutoryDocs = [
   },
 ]
 
+export const mouDocs = [
+  {
+    label: 'MoU on Exercise Doctor Chennai',
+    file: '/assets/file/mou/MoU on Exercise doctor Chennai.pdf',
+  },
+  { label: 'MoU on Synergy', file: '/assets/file/mou/MoU on Synergy.pdf' },
+  { label: 'MoU on Taping', file: '/assets/file/mou/MoU on Taping.pdf' },
+]
+
+export const curriculumDocs = [
+  {
+    label: 'Curriculum and Syllabus',
+    file: '/assets/doc/curriculum_and_syllabi.pdf',
+  },
+  { label: 'Curriculum 2021', file: '/assets/doc/CURRICULUM 21.pdf' },
+  { label: '1st Year Syllabus', file: '/assets/doc/1ST YEAR SYLLABUS.pdf' },
+  { label: '2nd Year Syllabus', file: '/assets/doc/2ND YEAR SYLLABUS.pdf' },
+]
+
 export const bosDocs = [
   { label: '1st Bos', file: '/assets/file/bos/1stbos.pdf' },
   { label: '2nd Bos', file: '/assets/file/bos/2ndbos.pdf' },

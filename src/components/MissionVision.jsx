@@ -21,9 +21,9 @@ const MissionVision = () => {
             </div>
           </div>
         </div>
-        <div className="row mt-none-30">
+        <div className="row mt-none-30 mission-vission-row">
           <div className="col-lg-6 mt-30">
-            <div className="mission-vission-item" style={{ height: '100%' }}>
+            <div className="mission-vission-item">
               <h3 className="xb-item--title">Our Vision</h3>
               <p className="xb-item--content">
                 To be a globally recognized centre of excellence in physiotherapy
@@ -41,7 +41,7 @@ const MissionVision = () => {
             </div>
           </div>
           <div className="col-lg-6 mt-30">
-            <div className="mission-vission-item" style={{ height: '100%' }}>
+            <div className="mission-vission-item">
               <h3 className="xb-item--title">Our Mission</h3>
               <ul className="xb-item--list list-unstyled">
                 <li>

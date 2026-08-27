@@ -6,9 +6,14 @@
    height: 91%;
    z-index: -1;
 }
+.mission-vission-row {
+    display: flex;
+    flex-wrap: wrap;
+}
 .mission-vission-item {
+    height: 100%;
     background-color: var(--color-secondary);
-    padding: 70px;
+    padding: 55px 50px;
     @include border-radius(10px);
     position: relative;
     z-index: 1;
@@ -25,7 +30,7 @@
         &--content {
             color: #FAD3D7;
             font-size: 16px;
-            margin-bottom: 40px;
+            margin-bottom: 0;
             line-height: 26px;
         }
         &--subtitle {
@@ -35,13 +40,27 @@
         &--list {
             li {
                 color: var(--color-white);
-                display: flex;
-                align-items: center;
+                display: block;
+                position: relative;
+                padding-left: 30px;
+                font-size: 16px;
+                line-height: 26px;
                 &:not(:last-child) {
-                    margin-bottom: 6px;
+                    margin-bottom: 18px;
                 }
                 span {
-                    margin-right: 10px;
+                    position: absolute;
+                    top: 5px;
+                    left: 0;
+                    margin-right: 0;
+                    display: inline-flex;
+                    img {
+                        display: block;
+                    }
+                }
+                strong {
+                    color: var(--color-white);
+                    font-weight: 700;
                 }
             }
         }

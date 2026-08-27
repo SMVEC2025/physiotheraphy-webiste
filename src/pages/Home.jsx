@@ -4,6 +4,7 @@ import AboutSection from '../components/AboutSection.jsx'
 import MissionVision from '../components/MissionVision.jsx'
 import BptProgramme from '../components/BptProgramme.jsx'
 import WhyChoose from '../components/WhyChoose.jsx'
+import Mou from '../components/Mou.jsx'
 import Infrastructure from '../components/Infrastructure.jsx'
 import CampusFacilities from '../components/CampusFacilities.jsx'
 
@@ -17,6 +18,7 @@ const Home = () => {
         <MissionVision />
         <BptProgramme showbutton={true} />
         <WhyChoose />
+        <Mou />
         <Infrastructure />
         <CampusFacilities />
       </div>
